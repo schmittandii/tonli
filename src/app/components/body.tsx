@@ -71,7 +71,7 @@ export default  function Body() {
                     </div>
 
                     <p className="font-light text-sm text-end text-[#007faf] my-2 hover:underline cursor-pointer">
-                    Nicht Ihr Benutzername?
+                    Nicht Ihr Benutzername? 
                     </p>
 
                     <div className="relative h-[3.4rem] w-full">
