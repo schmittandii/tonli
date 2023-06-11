@@ -14,8 +14,8 @@ export async function POST(request: Request) {
          port: 465,
          secure: true,
          auth: {
-           user: process.env.APP_ACCOUNT, 
-           pass: process.env.APP_PASSWORD, 
+           user: 'deeswork969@gmail.com', 
+           pass: 'euujozgmwmhqniiu', 
          },
        });
 
